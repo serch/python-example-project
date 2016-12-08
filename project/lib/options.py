@@ -17,7 +17,7 @@ class Options:
                                  '--example',
                                  default='example-value', # specifies default value
                                  dest='example', # determines the name of the attribute that parse_args yields
-                                 help='An example option') # specifies help message 
+                                 help='An example option') # specifies help message
 
     def parse(self, args=None):
         # parse known args, returns a Namespace object
@@ -25,4 +25,4 @@ class Options:
         # Parse known args returns (Namespace_of_known, list_of_unknown)
         self.known, self.unknown = self.parser.parse_known_args(args)[:]
         if len(self.unknown) != 0:
-            print '*WARN* Unknown args received: '+repr(self.unknown)
+            print('*WARN* Unknown args received: '+repr(self.unknown))

@@ -1,4 +1,4 @@
-from process import Process
+from .process import Process
 
 class Project:
 
@@ -12,7 +12,7 @@ class Project:
     def _get_date(self):
         # prints stdout of subprocess with command "date"
         # strips tailing endoflines because print adds one
-        return self.process.execute("date").rstrip('\n')
+        return str(self.process.execute("date")).rstrip('\n')
 
     def print_example_arg(self):
         return self.options.known.example
