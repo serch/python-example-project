@@ -17,6 +17,3 @@ class TestCommandLineParameters(unittest.TestCase):
         self.assertEquals(self.options.known.example, 'foobar')
         self.options.parse(['--example', 'not-a-foobar'])
         self.assertEquals(self.options.known.example, 'not-a-foobar')
-
-if __name__ == '__main__':
-    unittest.main()

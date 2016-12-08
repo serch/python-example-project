@@ -25,6 +25,3 @@ class TestProject(unittest.TestCase):
     def test_project_should_get_date(self):
         self.assertTrue('1st of April' in self.project.process.execute('date'))
         verify(self.project.process).execute('date')
-
-if __name__ == '__main__':
-    unittest.main()

@@ -1,9 +1,9 @@
 # use nose
-import sys, os
-from nose.core import TestProgram
-os.chdir(os.path.abspath(os.path.dirname(__file__)))
-TestProgram()
+# import sys, os
+# from nose.core import TestProgram
+# os.chdir(os.path.abspath(os.path.dirname(__file__)))
+# TestProgram()
 
 # use pytest
-# import pytest
-# pytest.main()
+import pytest
+pytest.main()

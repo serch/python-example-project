@@ -15,6 +15,3 @@ class TestProcess(unittest.TestCase):
         self.assertRaises(ProcessException,
                           self.process.execute,
                           "sh -c 'return 1'")
-
-if __name__ == '__main__':
-    unittest.main()
